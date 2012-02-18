@@ -2,7 +2,7 @@
 
 class Controller_Welcome extends Controller_Template {
     
-    public $template = 'welcome/index';
+    public $template = 'welcome/index2';
     
     public function action_index() {
 	$this->template->set('data', $_POST)
