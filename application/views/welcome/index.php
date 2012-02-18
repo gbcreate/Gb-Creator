@@ -7,7 +7,7 @@
     <body>
 	<span>Hello, <?=$name?></span><br />
 	
-	<?=Form::open(Url::site('/welcome/index1/Кролик2'))?>
+	<?=Form::open(Url::site('/welcome/index/' . Request::$current->param('id')))?>
 	Post:<span><?=Arr::get($data, 'name')?></span><br />
 	<?=Form::label('name', 'Your name:')?>
 	<?=Form::input('name', Request::$current->param('id'), array('id' => 'name', 'class' => 'wow'))?><br />
