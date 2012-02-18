@@ -8,6 +8,7 @@ class Controller_Welcome extends Controller_Template {
 	$this->template->set('data', $_POST)
 		->set('name', $this->request->param('id'))
 		->set('hello');
+        // Hello GitHub!
 	$this->response->body($this->template);
     }
 } // End Welcome
